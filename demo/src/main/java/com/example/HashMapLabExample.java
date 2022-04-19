@@ -1,4 +1,4 @@
-package com.hashmaplab;
+package com.example;
 
 import com.github.javafaker.Faker;
 import java.util.*;
