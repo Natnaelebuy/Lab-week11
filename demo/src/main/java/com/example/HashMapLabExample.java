@@ -1,6 +1,8 @@
 package com.example;
 
 import com.github.javafaker.Faker;
+import com.github.javafaker.Dune.Quote;
+
 import java.util.*;
 
 /*
@@ -13,6 +15,7 @@ public class HashMapLabExample {
   private static HashMap<String, Integer> jedi = new HashMap<String, Integer>();
   // hashmap that maps a jedi id to a jedi quote
   private static HashMap<Integer, String> quote = new HashMap<Integer, String>();
+  quote = "hello brother ";
 
   public static void main(String[] args) {
     // initialize the array with random values
