@@ -15,7 +15,7 @@ public class HashMapLabExample {
   private static HashMap<String, Integer> jedi = new HashMap<String, Integer>();
   // hashmap that maps a jedi id to a jedi quote
   private static HashMap<Integer, String> quote = new HashMap<Integer, String>();
-  quote = "hello brother ";
+            
 
   public static void main(String[] args) {
     // initialize the array with random values
@@ -126,12 +126,18 @@ public class HashMapLabExample {
   }
 
   public static void printJediQuote(Integer id) {
+    HashMap<String, Integer> jedi = new HashMap<String, Integer>();
+    for (String i : jedi.keySet()) {
+      System.out.println("key: " + i + " value: " + jedi.get(i));
+    }
+    
     // students should write code to
     // print a jedi given an id
     System.out.print("Does nothing now...");
   }
 
   public static void printAllJedi() {
+
     // students should write code to
     // print all the jedi names and ids. the jedi can be printed in any order (unordered).
     System.out.print("Does nothing now...");
