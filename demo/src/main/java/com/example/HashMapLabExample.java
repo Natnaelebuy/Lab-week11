@@ -1,8 +1,6 @@
 package com.example;
 
 import com.github.javafaker.Faker;
-import com.github.javafaker.Dune.Quote;
-
 import java.util.*;
 
 /*
@@ -126,20 +124,29 @@ public class HashMapLabExample {
   }
 
   public static void printJediQuote(Integer id) {
-    HashMap<String, Integer> jedi = new HashMap<String, Integer>();
-    for (String i : jedi.keySet()) {
-      System.out.println("key: " + i + " value: " + jedi.get(i));
-    }
     
     // students should write code to
     // print a jedi given an id
-    System.out.print("Does nothing now...");
+    System.out.printf("Jedi Id: %d\n" , id);
+    String jediQuote = quote.get(id);
+    System.out.printf("Quote: Jedi #%d often says: %s\n", id, jediQuote);
   }
 
   public static void printAllJedi() {
 
     // students should write code to
     // print all the jedi names and ids. the jedi can be printed in any order (unordered).
+
+    for (String name: jedi.keySet()){
+      System.out.println(name);
+      Integer id = jedi.get(name);
+      System.out.println(id);
+      String jediQuote = quote.get(id);
+      System.out.println(jediQuote);
+
+
+    }
+    
     System.out.print("Does nothing now...");
   }
 }
